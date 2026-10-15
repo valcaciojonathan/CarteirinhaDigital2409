@@ -12,14 +12,16 @@ class FakeLoginRepositoryImpl : LoginRepository {
             Result.success(
                 UsuarioLogado(
                     id="1",
-                    nome = "Rafael Costa",
+                    nome = "Jonathan Valcacio",
                     curso = "Desenvolvimento de Sistema",
-                    turma = "2DEVEST-B",
+                    turma = "2DEVEST-A",
                     token = "token-fake-para-aula"
                 )
             )
         }else{
             Result.failure(
+
+
                 IllegalArgumentException(
                         "Login ou senha inválidos"
                 )
